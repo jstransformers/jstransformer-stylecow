@@ -1,1 +1,16 @@
-{}
+{
+  "plugins": [
+    "color",
+    "fixes",
+    "flex",
+    "matches",
+    "import",
+    "msfilter-background-alpha",
+    "msfilter-linear-gradient",
+    "msfilter-transform",
+    "nested-rules",
+    "prefixes",
+    "rem",
+    "variables"
+  ]
+}

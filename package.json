@@ -1,7 +1,7 @@
 {
-  "name": "jstransformer-foo",
-  "version": "0.0.0",
-  "description": "Foo support for JSTransformers.",
+  "name": "jstransformer-stylecow",
+  "version": "0.0.1",
+  "description": "Stylecow support for JSTransformers.",
   "keywords": [
     "jstransformer"
   ],
@@ -9,7 +9,23 @@
     "index.js"
   ],
   "devDependencies": {
-    "test-jstransformer": "^1.0.0"
+    "test-jstransformer": "^1.0.0",
+    "stylecow-plugin-calc": "*",
+    "stylecow-plugin-color": "*",
+    "stylecow-plugin-custom-media": "*",
+    "stylecow-plugin-custom-selector": "*",
+    "stylecow-plugin-extend": "*",
+    "stylecow-plugin-fixes": "*",
+    "stylecow-plugin-flex": "*",
+    "stylecow-plugin-import": "*",
+    "stylecow-plugin-matches": "*",
+    "stylecow-plugin-msfilter-background-alpha": "*",
+    "stylecow-plugin-msfilter-linear-gradient": "*",
+    "stylecow-plugin-msfilter-transform": "*",
+    "stylecow-plugin-nested-rules": "*",
+    "stylecow-plugin-prefixes": "*",
+    "stylecow-plugin-rem": "*",
+    "stylecow-plugin-variables": "*"
   },
   "scripts": {
     "test": "test-jstransformer",
@@ -23,5 +39,8 @@
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "stylecow-core": "^1.0.1"
+  }
 }

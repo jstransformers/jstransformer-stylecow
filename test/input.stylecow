@@ -1,0 +1,9 @@
+:root {
+  --color1: #689123;
+  --color2: rgb(222, 111, 180);
+}
+
+a {
+  color: var(--color3, red);
+  background: var(--color2);
+}
