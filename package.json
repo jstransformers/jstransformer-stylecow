@@ -25,7 +25,7 @@
     "stylecow-plugin-nested-rules": "*",
     "stylecow-plugin-prefixes": "*",
     "stylecow-plugin-rem": "*",
-    "stylecow-plugin-variables": "*"
+    "stylecow-plugin-variables": "5.1.0"
   },
   "scripts": {
     "test": "test-jstransformer",
