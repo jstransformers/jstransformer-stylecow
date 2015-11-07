@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # jstransformer-stylecow
 
 [Stylecow](http://stylecow.github.io) support for [JSTransformers](http://github.com/jstransformers).
