@@ -2,6 +2,9 @@
   "name": "jstransformer-stylecow",
   "version": "0.0.2",
   "description": "Stylecow support for JSTransformers.",
+  "engines": {
+    "node": ">=4.0"
+  },
   "keywords": [
     "jstransformer",
     "stylecow"
