@@ -1,39 +1,40 @@
 'use strict';
 
 var stylecow = require('stylecow-core');
+var plugins  = require('stylecow-plugins');
 
 exports.name = 'stylecow';
 exports.outputFormat = 'css';
 
-function processOptions(options) {
+function createTask(options) {
+  var tasks = new stylecow.Tasks();
+
   if (options.support) {
-    stylecow.minSupport(options.support);
+    tasks.minSupport(options.support);
   }
 
-  if (options.plugins) {
-    options.plugins.forEach(function (plugin) {
-      stylecow.loadNpmModule('stylecow-plugin-' + plugin);
-    });
-  }
+  tasks.use(plugins(options.plugins));
 
   if (options.modules) {
     options.modules.forEach(function (module) {
-      stylecow.loadNpmModule(module);
+      tasks.use(require(module));
     });
   }
+
+  return tasks;
 }
 
 exports.render = function (str, options, locals) {
-  processOptions(options);
+  var tasks = createTask(options);
   var css = stylecow.parse(str);
-  stylecow.run(css);
+  tasks.run(css);
   return css.toString();
 };
 
 exports.renderFile = function (file, options, locals) {
   locals = locals || {}
-  processOptions(options);
+  var tasks = createTask(options);
   var css = stylecow.parseFile(file);
-  stylecow.run(css)
+  tasks.run(css);
   return css.toString();
 };

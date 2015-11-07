@@ -1,31 +1,16 @@
 {
   "name": "jstransformer-stylecow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stylecow support for JSTransformers.",
   "keywords": [
-    "jstransformer"
+    "jstransformer",
+    "stylecow"
   ],
   "files": [
     "index.js"
   ],
   "devDependencies": {
-    "test-jstransformer": "^1.0.0",
-    "stylecow-plugin-calc": "*",
-    "stylecow-plugin-color": "*",
-    "stylecow-plugin-custom-media": "*",
-    "stylecow-plugin-custom-selector": "*",
-    "stylecow-plugin-extend": "*",
-    "stylecow-plugin-fixes": "*",
-    "stylecow-plugin-flex": "*",
-    "stylecow-plugin-import": "*",
-    "stylecow-plugin-matches": "*",
-    "stylecow-plugin-msfilter-background-alpha": "*",
-    "stylecow-plugin-msfilter-linear-gradient": "*",
-    "stylecow-plugin-msfilter-transform": "*",
-    "stylecow-plugin-nested-rules": "*",
-    "stylecow-plugin-prefixes": "*",
-    "stylecow-plugin-rem": "*",
-    "stylecow-plugin-variables": "*"
+    "test-jstransformer": "^1.0.0"
   },
   "scripts": {
     "test": "test-jstransformer",
@@ -33,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstransformers/jstransformer-foo.git"
+    "url": "https://github.com/jstransformers/jstransformer-stylecow.git"
   },
   "author": {
     "name": "JSTransformers Team",
@@ -41,6 +26,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "stylecow-core": "^1.0.1"
+    "stylecow-core": "2.1.x",
+    "stylecow-plugins": "1.2.x"
   }
 }
