@@ -41,6 +41,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "stylecow-core": "^1.0.1"
+    "stylecow-core": "^2.1.1"
   }
 }
