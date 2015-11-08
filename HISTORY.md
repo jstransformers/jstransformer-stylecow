@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.0: 2015-11-08
+
+- Update to `stylecow-plugins@^1.3.0`
+  - From [@greenkeeperio-bot](http://github.com/greenkeeperio-bot)
+
 ## v0.1.0: 2015-11-07
 
 - Update to `stylecow-core@2.1.x`
