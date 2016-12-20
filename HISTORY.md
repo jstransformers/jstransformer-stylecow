@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.0: 2016-12-19
+
+- Updated Boilerplate
+- Local variables are now merged into the options
+
 ## v0.2.0: 2015-11-08
 
 - Update to `stylecow-plugins@^1.3.0`
