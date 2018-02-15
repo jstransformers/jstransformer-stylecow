@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var stylecow = require('jstransformer')(require('jstransformer-stylecow'));
+var stylecow = require('jstransformer')(require('jstransformer-stylecow'))
 
 stylecow.render('p {\
   --myColor: blue;\
