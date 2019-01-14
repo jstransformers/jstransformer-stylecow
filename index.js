@@ -18,7 +18,7 @@ function createTask(options) {
 
   if (options.modules) {
     options.modules.forEach(module => {
-      tasks.use(require(module)) // eslint-disable-line import/no-dynamic-require
+      tasks.use(require(module))
     })
   }
 
@@ -30,6 +30,7 @@ exports.render = function (str, options, locals) {
   const tasks = createTask(opts)
   const css = stylecow.parse(str)
   tasks.run(css)
+
   return css.toString()
 }
 
@@ -38,5 +39,6 @@ exports.renderFile = function (file, options, locals) {
   const tasks = createTask(opts)
   const css = stylecow.parseFile(file)
   tasks.run(css)
+
   return css.toString()
 }
