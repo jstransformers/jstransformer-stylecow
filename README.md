@@ -1,7 +1,5 @@
 # jstransformer-stylecow
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-stylecow.svg)](https://greenkeeper.io/)
-
 [Stylecow](http://stylecow.github.io) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-stylecow/master.svg)](https://travis-ci.org/jstransformers/jstransformer-stylecow)
